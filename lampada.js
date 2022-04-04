@@ -49,3 +49,13 @@ function clickT(event) {
 }
 
 window.addEventListener('keydown', clickT)
+
+//New - função para mudar a cor da letra 
+
+function clickC(event) {
+    if (event.key === 'c'){
+        document.documentElement.classList.toggle('colorchange');
+    }
+}
+
+window.addEventListener('keydown', clickC)
