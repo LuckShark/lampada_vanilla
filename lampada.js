@@ -39,3 +39,13 @@ lamp.addEventListener('mouseover', lampOn)
 lamp.addEventListener('mouseleave', lampOff)
 
 lamp.addEventListener('dblclick', lampBroken)
+
+//New - função para fazer aumentar a letra 
+
+function clickT(event) {
+    if (event.key === 't'){
+        document.documentElement.classList.toggle('textomaior');
+    }
+}
+
+window.addEventListener('keydown', clickT)
